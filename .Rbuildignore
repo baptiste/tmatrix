@@ -1,0 +1,14 @@
+.gitignore
+.git
+.RS_Store
+.travis.yml
+travis-tool.sh
+
+
+src/*\.o$
+src/*\.so$
+^.*\.Rproj$
+^\.Rproj\.user$
+dev/
+drafts/
+overview.png

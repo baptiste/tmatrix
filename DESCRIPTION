@@ -1,0 +1,20 @@
+Package: tmatrix
+Version: 0.0.1
+Authors@R: c(person("Baptiste", "Auguie",
+    email = "baptiste.auguie@gmail.com",
+    role = c("aut", "cre")))
+License: GPL-3
+Title: T-matrix Method for Electromagnetic Scattering by Particles
+Description: R/C++ implementation of the T-matrix method [work in progress]
+    based on other codes.
+URL: https://github.com/baptiste/tmatrix
+BugReports: https://github.com/baptiste/tmatrix/issues
+Type: Package
+LazyLoad: yes
+SystemRequirements: GNU make
+LinkingTo: Rcpp, RcppArmadillo
+Suggests:
+    knitr
+Imports:
+    Rcpp
+RoxygenNote: 5.0.1
