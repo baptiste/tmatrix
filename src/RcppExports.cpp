@@ -44,3 +44,42 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// cpp_ssh
+arma::cx_mat cpp_ssh(const double phi, const double theta, const double psi);
+RcppExport SEXP tmatrix_cpp_ssh(SEXP phiSEXP, SEXP thetaSEXP, SEXP psiSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const double >::type phi(phiSEXP);
+    Rcpp::traits::input_parameter< const double >::type theta(thetaSEXP);
+    Rcpp::traits::input_parameter< const double >::type psi(psiSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_ssh(phi, theta, psi));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_vsh
+arma::cx_mat cpp_vsh(const double phi, const double theta, const double psi);
+RcppExport SEXP tmatrix_cpp_vsh(SEXP phiSEXP, SEXP thetaSEXP, SEXP psiSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const double >::type phi(phiSEXP);
+    Rcpp::traits::input_parameter< const double >::type theta(thetaSEXP);
+    Rcpp::traits::input_parameter< const double >::type psi(psiSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_vsh(phi, theta, psi));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_vswf
+arma::cx_mat cpp_vswf(const double phi, const double theta, const double psi);
+RcppExport SEXP tmatrix_cpp_vswf(SEXP phiSEXP, SEXP thetaSEXP, SEXP psiSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const double >::type phi(phiSEXP);
+    Rcpp::traits::input_parameter< const double >::type theta(thetaSEXP);
+    Rcpp::traits::input_parameter< const double >::type psi(psiSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_vswf(phi, theta, psi));
+    return rcpp_result_gen;
+END_RCPP
+}

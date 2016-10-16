@@ -13,3 +13,15 @@ cpp_axis_rotation <- function(angle, axis) {
     .Call('tmatrix_cpp_axis_rotation', PACKAGE = 'tmatrix', angle, axis)
 }
 
+cpp_ssh <- function(phi, theta, psi) {
+    .Call('tmatrix_cpp_ssh', PACKAGE = 'tmatrix', phi, theta, psi)
+}
+
+cpp_vsh <- function(phi, theta, psi) {
+    .Call('tmatrix_cpp_vsh', PACKAGE = 'tmatrix', phi, theta, psi)
+}
+
+cpp_vswf <- function(phi, theta, psi) {
+    .Call('tmatrix_cpp_vswf', PACKAGE = 'tmatrix', phi, theta, psi)
+}
+
